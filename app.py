@@ -48,7 +48,7 @@ def signin():
         if request.method == 'GET':
             return render_template('signin.html')
         elif request.method == 'POST':
-           
+
             _email = request.form['inputEmail']
             _password = request.form['inputPassword']
 
@@ -56,9 +56,12 @@ def signin():
                 con = sql.connect("user_db.db")
                 cur = con.cursor()
                 #cur.execute('SELECT SQLITE_VERSION()')
-                cur.execute("SELECT * FROM users WHERE email=?", (_email,))
+                cur.execute("SELECT * FROM users WHERE email=? AND password=?", (_email,_password))
                 data = cur.fetchone()
-                return render_template('welcome.html',username = _email)
+                if data:
+                    return render_template('welcome.html',username = _email)
+                else:
+                    return render_template('error.html')
 
     except:
         print("error")
@@ -71,4 +74,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

@@ -1,6 +1,6 @@
 virtualenv env
 source env/bin/activate
 pip install flask
-python app.py &
+python -m py_compile app.py
 #sdsdsds
 #asasasas

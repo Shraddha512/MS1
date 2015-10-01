@@ -1,5 +1,5 @@
 from flask import Flask, render_template, json, request, g
-import sqlite3 as sql
+#import sqlite3 as sql
 
 #testingasasasasa
 

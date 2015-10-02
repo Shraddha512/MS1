@@ -44,3 +44,9 @@ We have two jobs corresponding to two different branchest of our repository(mast
 **History of past builds**
 
 ![Jenkins build history page to track logs](https://github.com/Shraddha512/MS1/blob/master/images/Screen%20Shot%202015-10-01%20at%2010.18.34%20PM.png)
+
+
+<h3>Screencast </h3>
+
+<i>Click here to watch the screencast </i>
+[![Click here to watch the screencast] (http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/4CTNIQw-mHg)

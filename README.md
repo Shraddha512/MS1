@@ -1,6 +1,12 @@
 Milestone 1
 ===========
 
+### Application
+
+We are creating a Bucket List web application using Python flask framework and sqllite3 as the database.
+
+![](https://github.com/Shraddha512/MS1/blob/master/images/Screen%20Shot%202015-10-01%20at%2010.26.07%20PM.png)
+
 ### Build Section
 
 ---

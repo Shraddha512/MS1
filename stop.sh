@@ -2,6 +2,4 @@ cd /home/ec2-user/
 virtualenv env
 . env/bin/activate
 pip install flask
-nohup python app.py &
-
-exit -1
+python -m py_compile app.py

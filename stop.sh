@@ -3,3 +3,4 @@ virtualenv env
 . env/bin/activate
 pip install flask
 python app.py &
+exit 1

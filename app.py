@@ -1,19 +1,24 @@
 from flask import Flask, render_template, json, request, g
 import sqlite3 as sql
-
+import redis
 
 '''
 test
 '''
+
 app = Flask(__name__)
 DATABASE = 'user_db.db'
 HOST = "0.0.0.0"
 PORT = 5000
 
+r= redis.StrictRedis()
 
 @app.route('/')
 def main():
-    return render_template('index.html')
+    if(r.get("flag")=="0"):	
+    	return render_template('index.html')
+    else:
+	return render_template('indexcolor.html')
 
 
 @app.route('/showSignUp')
